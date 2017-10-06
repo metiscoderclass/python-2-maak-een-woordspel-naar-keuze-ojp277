@@ -9,7 +9,8 @@ print ("( (_-. /(__)\  )(__( (_-..-_)(   )__) ")
 print (" \___/(__)(__)(____)\___/\____) (____)")
 print("")
 
-while True:
-    woorden=["waterleiding","poepen","school","deurklink","balk"]
+woorden=["waterleiding","poepen","school","deurklink","balk"]
 
-    print ("bibb" + random.choise(woorden))
+while True:
+    woord = random.choice(woorden)
+    print (woord)
