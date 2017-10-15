@@ -20,16 +20,37 @@ woord = random.choice(woorden)
 #print (woord)
 letters = len(woord)
 streepjes = letters * "-"
-print(streepjes)
+print( "dit is het woord : " + (streepjes))
+print("")
+print("")
 
-for i in range(999):
+while True:
     vraag = input ("Geef een letter : ")
-    if vraag in woord:
-        print ("je")
-    if vraag not in woord:
-        print ("no")
+    letterc = len(vraag)
+    if vraag.upper() ==  "QQ":
+        break
+    else:
+        if letterc == 1:
+            if vraag.isalpha():
+                if vraag in woord:
+                    print ("De letter '" + (vraag) + "' is correct")
+                if vraag not in woord:
+                    print ("De letter '" + (vraag) + "' is niet goed")
+            else:
+                print("Deze letter zit niet in het alfabet")
+
+        else:
+             print ("Je mag maar '1' letter invoeren")
+             time.sleep(1)
 
 
+
+
+
+
+
+
+            
 #if letters in woord:
 #    print ("joepie")
 
